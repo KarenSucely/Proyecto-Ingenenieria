@@ -1,0 +1,54 @@
+article{
+	margin-left: 10%; 
+    padding: 1px 15px;
+    height: 1000px;
+}
+body {margin: 0;}
+ul {
+    list-style-type: none; /*Elimina las viñetas*/
+    margin: 0; 	/*Eliminar la configuración predeterminada del navegador*/
+    padding: 0; /*Eliminar la configuración predeterminada del navegador*/
+    overflow: auto;
+    width: 10%;
+    height: 100%; 
+    background-color: #3498DB; /*Color de la barra*/
+    position: fixed;
+}
+
+a {
+    display: block;
+    color: white; /*Color de letra*/
+    padding: 20px 20px;  
+    text-decoration: none; /*Eliminar subrayado*/
+}
+a:hover { /*Cambiar el color y letra cuando se mueve el mouse sobre ellos*/
+    background-color: #2E86C1; 
+    color: white; /*Color de letra*/
+}
+
+.active {
+    color: black; /*Color de letra*/
+}
+
+a:hover:not(.active) {
+    color: white; /*Color de letra*/
+}
+
+@media screen and (max-width: 900px) {
+    ul {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    a {
+        float: left;
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    li {
+        text-align: center;
+        float: none;
+    }
+
